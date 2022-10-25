@@ -2,22 +2,15 @@
 // inner
 // ------------------------------
 
-.l-inner{
-    padding: 0 5%;
-    max-width: 1280px;
+.l-inner {
+    padding: 0 11.8%;
+    max-width: $site-w-pc;
     margin: 0 auto;
     position: relative;
 }
 
-@media screen and (min-width: $site-w-pc+1){
-    .l-inner{
-        padding: 0 64px;
-    }
-}
-
-
-@media screen and (max-width: $breakPoint){
-    .l-inner{
-        padding: 0 5.33%;
+@media screen and (min-width: $site-w-pc+1) {
+    .l-inner {
+        padding: 0 170px;
     }
 }

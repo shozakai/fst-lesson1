@@ -2,40 +2,44 @@
 // base
 // ------------------------------
 
-html{
+html {
     font-size: 62.5%;
 }
-body{
+
+body {
     min-width: $site-w-min;
     background: $color-white;
-    color: $color-black;
-    line-height: 1.6;
+    color: $color-default-black;
+    line-height: 2;
     font-size: 1.4rem;
-    @extend .h-font--yugo;
+    @extend .h-font--noto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     word-wrap: break-word;
     overflow-wrap: break-word;
     line-break: strict;
 }
-a{
+
+a {
     outline: none;
     text-decoration: none;
-    color: $color-black;
+    color: $color-default-black;
     @include transition;
-    &:hover{
+    &:hover {
         opacity: .6;
     }
 }
-img{
+
+img {
     width: 100%;
     height: auto;
     user-select: none;
 }
 
-@media screen and (max-width: $breakPoint){
-    a{
-        &:hover{
+
+@media screen and (max-width: $breakPoint) {
+    a {
+        &:hover {
             opacity: 1;
         }
     }

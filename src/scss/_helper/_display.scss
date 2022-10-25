@@ -2,30 +2,36 @@
 // display
 // ------------------------------
 
-.h-pc{
+.h-pc {
     display: block;
 }
-.h-sp{
-    display: none;
-}
-br.h-pc{
-    display: inline-block;
-}
-br.h-sp{
+
+.h-sp {
     display: none;
 }
 
-@media screen and (max-width: $breakPoint){
-    .h-pc{
+br.h-pc {
+    display: inline-block;
+}
+
+br.h-sp {
+    display: none;
+}
+
+@media screen and (max-width: $breakPoint) {
+    .h-pc {
         display: none;
     }
-    .h-sp{
+    
+    .h-sp {
         display: block;
     }
-    br.h-pc{
+    
+    br.h-pc {
         display: none;
     }
-    br.h-sp{
+    
+    br.h-sp {
         display: inline-block;
     }
 }

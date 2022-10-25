@@ -4,13 +4,21 @@
 
 // ---------- size ----------
 $site-w-min: 320px;
-$site-w-pc: 1366px;
+$site-w-pc: 1440px;
 $site-w-sp: 375px;
 $breakPoint: 768px;
 
 // ---------- color ----------
 $color-white: #fff;
 $color-black: #000;
+$color-default-black: #010101;
+$color-gray01: #EEE;
+$color-gray02: #E3E3E3;
+$color-gray03: #9E9E9E;
+$color-gray04: #4E4E4E;
+$color-blue: #6783BA;
+$color-orange01: #E08735;
+$color-orange02: #F98064;
 
 // ---------- ease ----------
 $ease-1: ease-out;
