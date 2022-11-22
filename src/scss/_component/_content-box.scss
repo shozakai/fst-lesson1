@@ -1,0 +1,14 @@
+// ------------------------------
+// content-box
+// ------------------------------
+
+.c-content-box {
+    padding: 62px calc(110/1440 * 100vw) 120px;
+    background: $color-white;
+}
+
+@media screen and (min-width: $site-w-pc+1) {
+    .c-content-box {
+        padding: 62px 110px 90px;
+    }
+}

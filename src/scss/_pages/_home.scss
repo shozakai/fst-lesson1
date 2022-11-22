@@ -6,7 +6,27 @@
 
     // ---------- visual ----------
     .visual{
-    }
-}
+        background: url('/assets/images/home/kv.jpg') no-repeat center / cover;
 
-@media screen and (max-width: $breakPoint){}
+        &__content {
+            display: flex;
+            align-items: center;
+            min-height: 494px;
+        }
+    }
+
+    // ---------- about ----------
+    .about {
+        padding: 70px 0 120px;
+        background: $color-gray01;
+
+        &__ttl {
+           margin-bottom: 70px; 
+        }
+
+        &__content-ttl {
+            margin-bottom: 40px;
+        }
+    }
+
+}

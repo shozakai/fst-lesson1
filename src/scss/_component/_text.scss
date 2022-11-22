@@ -26,6 +26,22 @@
     font-size: 1.4rem;
 }
 
+@mixin line($border-color){
+    border-left-color: $border-color;
+    border-left-width: 5px;
+    border-left-style: solid;
+    padding-left: 25px;
+    @extend .c-text--28;
+}
+
+.c-text--lineBlue {
+    @include line($color-blue);
+}
+
+.c-text--lineOrange {
+    @include line($color-orange01);
+}
+
 .c-text--center {
     text-align: center;
 }

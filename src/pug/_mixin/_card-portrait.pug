@@ -1,0 +1,8 @@
+mixin card-portrait(param)
+    .c-card-portrait
+        - if (param.thumb)
+            .c-card-portrait__thumb: img(src=param.thumb alt=param.ttl)
+        - if (param.ttl)
+            p.c-card-portrait__ttl #{param.ttl}
+        - if (param.txt)
+            p.c-card-portrait__txt #{param.txt}

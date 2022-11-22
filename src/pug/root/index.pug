@@ -1,4 +1,5 @@
 extends ../_template/_extend
+include ../_mixin/_card-portrait
 
 block vars
     -
@@ -11,3 +12,29 @@ block vars
 block content
 
     section.visual
+        .l-inner
+            .visual__content
+                h1.visual__ttl.c-text--52.c-text--fw700.h-font--inter Site Title
+
+    section.about
+        .l-inner
+            h2.about__ttl.c-text--42.c-text--center 見出しテスト見出しテスト見出しテスト
+            .about__content.c-content-box
+                h3.about__content-ttl.c-text--lineBlue 見出しテスト見出しテスト見出しテスト
+                +card-portrait({
+                    thumb: page.root + "assets/images/home/thumb01.jpg",
+                    ttl: "見出しテスト見出しテスト",
+                    txt: "この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。",
+                })
+                +card-portrait({
+                    thumb: page.root + "assets/images/home/thumb02.jpg",
+                    ttl: "見出しテスト見出しテスト",
+                    txt: "この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。",
+                })
+                +card-landscape({
+                    direction: "left",
+                    thumb: page.root + "assets/images/home/thumb02.jpg",
+                    ttl: "見出しテスト見出しテスト",
+                    txt: "この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。",
+                })
+                
