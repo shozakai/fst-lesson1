@@ -1,5 +1,4 @@
 extends ../_template/_extend
-include ../_mixin/_card-portrait
 
 block vars
     -
@@ -21,20 +20,48 @@ block content
             h2.about__ttl.c-text--42.c-text--center 見出しテスト見出しテスト見出しテスト
             .about__content.c-content-box
                 h3.about__content-ttl.c-text--lineBlue 見出しテスト見出しテスト見出しテスト
-                +card-portrait({
-                    thumb: page.root + "assets/images/home/thumb01.jpg",
-                    ttl: "見出しテスト見出しテスト",
-                    txt: "この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。",
-                })
-                +card-portrait({
-                    thumb: page.root + "assets/images/home/thumb02.jpg",
-                    ttl: "見出しテスト見出しテスト",
-                    txt: "この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。",
-                })
-                +card-landscape({
-                    direction: "left",
-                    thumb: page.root + "assets/images/home/thumb02.jpg",
-                    ttl: "見出しテスト見出しテスト",
-                    txt: "この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。",
-                })
-                
+                .about__group
+                    .l-col
+                        .c-card-portrait
+                            .c-card-portrait__thumb: img(src=page.root + "assets/images/home/thumb01.jpg")
+                            h4.c-card-portrait__ttl 見出しテスト見出しテスト
+                            p.c-card-portrait__txt この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。
+                        .c-card-portrait
+                            .c-card-portrait__thumb: img(src=page.root + "assets/images/home/thumb02.jpg")
+                            h4.c-card-portrait__ttl 見出しテスト見出しテスト
+                            p.c-card-portrait__txt この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。
+                .about__group
+                    .c-card-landscape
+                        h4.c-card-landscape__ttl 見出しテスト見出しテスト
+                        .c-card-landscape__body
+                            .c-card-landscape__thumb: img(src=page.root + "assets/images/home/thumb03.jpg")
+                            .c-card-landscape__content
+                                p.c-card-landscape__txt この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。
+                                +btn({
+                                    type: "box",
+                                    iconType: "arrow",
+                                    color: "blue",
+                                    linktxt: "LINK",
+                                    link: "#",
+                                })
+                .about__group
+                    .c-card-landscape.c-card-landscape--re
+                        h4.c-card-landscape__ttl 見出しテスト見出しテスト
+                        .c-card-landscape__body
+                            .c-card-landscape__thumb: img(src=page.root + "assets/images/home/thumb03.jpg")
+                            .c-card-landscape__content
+                                p.c-card-landscape__txt この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。
+                                 +btn({
+                                    type: "box",
+                                    iconType: "pdf",
+                                    color: "orange",
+                                    linktxt: "PDF",
+                                    link: "#",
+                                })
+                .c-text--center.h-margin--t80
+                    +btn({
+                        type: "more",
+                        iconType: "arrow",
+                        linktxt: "SEE MORE",
+                        link: page.root + "about/",
+                    })

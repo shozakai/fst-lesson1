@@ -27,11 +27,19 @@
 }
 
 @mixin line($border-color){
-    border-left-color: $border-color;
-    border-left-width: 5px;
-    border-left-style: solid;
+    position: relative;
     padding-left: 25px;
     @extend .c-text--28;
+    line-height: 1;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background: $border-color;
+    }
 }
 
 .c-text--lineBlue {
@@ -52,7 +60,7 @@
 
 .c-text--fw300 {
     font-weight: 300;
-}x
+}
 
 .c-text--fw400 {
     font-weight: 400;

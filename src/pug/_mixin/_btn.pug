@@ -1,3 +1,22 @@
 mixin btn(param)
-    .c-btn
-        a(href=param.link)
+    - if (param.type === "more")
+        .c-btn-more
+            a(href=param.link)
+                span #{param.linktxt}
+                i.fas.fa-caret-right
+    - else if (param.type === "box" && param.color === "blue")
+        .c-btn-box.c-btn-box--blue
+            a(href=param.link)
+                span #{param.linktxt}
+                - if (param.iconType === "arrow")
+                    i.fas.fa-caret-right
+                - else
+                    i.far.fa-file-pdf
+    - else if (param.type === "box" && param.color === "orange")
+        .c-btn-box.c-btn-box--orange
+            a(href=param.link)
+                span #{param.linktxt}
+                - if (param.iconType === "arrow")
+                    i.fas.fa-caret-right
+                - else
+                    i.far.fa-file-pdf

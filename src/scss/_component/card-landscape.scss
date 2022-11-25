@@ -1,0 +1,46 @@
+// ------------------------------
+// card-landscape
+// ------------------------------
+
+.c-card-landscape {
+    padding: calc(36 / 1440 * 100vw);
+    border: 1px solid $color-gray02;
+    border-radius: 10px;
+    &--re {
+        .c-card-landscape {
+            &__body {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+    @media screen and (min-width: $site-w-pc+1) {
+        padding: 36px;
+    }
+
+    &__ttl {
+        margin-bottom: 20px;
+        @extend .c-text--22;
+    }
+
+    &__body {
+        display: flex;
+        gap: 0 calc(30 / 1440 * 100vw);
+        @media screen and (min-width: $site-w-pc+1) {
+            gap: 0 30px;
+        }
+    }
+
+    &__thumb {
+        width: 100%;
+        max-width: 342px;
+    }
+
+    &__content {
+        flex: 1;
+    }
+
+    &__txt {
+        margin-bottom: 40px;
+        color: $color-black;
+    }
+}

@@ -1,0 +1,22 @@
+// ------------------------------
+// col
+// ------------------------------
+
+.l-col {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px calc(40 / 1440 * 100vw);
+    flex-wrap: wrap;
+    @media screen and (min-width: $site-w-pc+1) {
+        gap: 40px;
+    }
+
+    & > * {
+        width: calc(420 / 1440 * 100vw);
+        
+        @media screen and (min-width: $site-w-pc+1) {
+            width: 420px;
+        }
+    }
+}

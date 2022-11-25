@@ -1,0 +1,25 @@
+// ------------------------------
+// card-portrait
+// ------------------------------
+
+.c-card-portrait {
+    padding: calc(36 / 1440 * 100vw);
+    border: 1px solid $color-gray02;
+    border-radius: 10px;
+    @media screen and (min-width: $site-w-pc+1) {
+        padding: 36px;
+    }
+    
+    &__thumb {
+        margin-bottom: 20px;
+    }
+
+    &__ttl {
+        margin-bottom: 10px;
+        @extend .c-text--22;
+    }
+
+    &__txt {
+        color: $color-black;
+    }
+}

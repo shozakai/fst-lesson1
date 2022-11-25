@@ -18,7 +18,6 @@
     // ---------- about ----------
     .about {
         padding: 70px 0 120px;
-        background: $color-gray01;
 
         &__ttl {
            margin-bottom: 70px; 
@@ -26,6 +25,12 @@
 
         &__content-ttl {
             margin-bottom: 40px;
+        }
+
+        &__group {
+            & + .about__group {
+                margin-top: 40px;
+            }
         }
     }
 

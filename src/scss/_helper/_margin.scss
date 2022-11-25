@@ -1,0 +1,43 @@
+// ------------------------------
+// margin
+// ------------------------------
+
+$margins: 120, 80, 56, 48, 44, 40, 32, 30, 24, 16, 8, 4, 0;
+
+@each $margin in $margins {
+    $n: index($margins, $margin);
+
+    .h-margin--t#{$margin}{
+        margin-top: #{$margin}px !important;
+    }
+    .h-margin--b#{$margin}{
+        margin-bottom: #{$margin}px !important;
+    }
+    .h-margin--l#{$margin}{
+        margin-left: #{$margin}px !important;
+    }
+    .h-margin--r#{$margin}{
+        margin-right: #{$margin}px !important;
+    }
+}
+
+@media screen and (max-width: $breakPoint){
+    $margins: 120, 80, 56, 48, 44, 40, 32, 24, 16, 8, 4, 0;
+
+    @each $margin in $margins {
+        $n: index($margins, $margin);
+
+        .h-margin--sp-t#{$margin}{
+            margin-top: #{$margin}px !important;
+        }
+        .h-margin--sp-b#{$margin}{
+            margin-bottom: #{$margin}px !important;
+        }
+        .h-margin--sp-l#{$margin}{
+            margin-left: #{$margin}px !important;
+        }
+        .h-margin--sp-r#{$margin}{
+            margin-right: #{$margin}px !important;
+        }
+    }
+}
