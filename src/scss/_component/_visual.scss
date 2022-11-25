@@ -1,0 +1,17 @@
+// ------------------------------
+// visual
+// ------------------------------
+
+.c-visual {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    &__ttl {
+        padding: 76px 0 81px;
+        @extend .c-text--52;
+        @extend .h-font--inter;
+        line-height: 1.2; 
+        font-weight: 700;
+    }
+}

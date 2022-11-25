@@ -1,0 +1,53 @@
+extends ../../_template/_extend
+include ../../_mixin/_visual
+
+block vars
+    -
+        var page = {
+            root: '../',
+            class: 'page-about'
+        };
+
+        var visual = {
+            img: page.root + "assets/images/about/about-kv.jpg",
+            ttl: "About Page"
+        };
+    -
+
+block content
+    +visual(visual)
+
+    section.content
+        .l-inner
+            h2.content__ttl.c-text--lineOrange 見出しテスト見出しテスト見出しテスト
+            .content__slide
+            .c-content-box
+                h3.content__head.c-text--lineBlue 見出しテスト見出しテスト見出しテスト
+                .content__group
+                    .l-col
+                        .c-card-portrait
+                            .c-card-portrait__thumb: img(src=page.root + "assets/images/about/thumb01.jpg")
+                            h4.c-card-portrait__ttl 見出しテスト見出しテスト
+                            p.c-card-portrait__txt この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。
+                        .c-card-portrait
+                            h4.c-card-portrait__ttl 見出しテスト見出しテスト
+                            p.c-card-portrait__txt この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。
+                .content__group
+                    .c-card-portrait
+                        h4.c-card-portrait__ttl.c-text--center 見出しテスト見出しテスト
+                        p.c-card-portrait__txt この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。この文章はダミーです。文字の大きさや書体のサンプルです。
+                        .c-text--center.h-margin--t30
+                            +btn({
+                                type: "box",
+                                iconType: "arrow",
+                                color: "blue",
+                                linktxt: "LINK",
+                                link: "#",
+                            })
+                .c-text--center.h-margin--t80
+                            +btn({
+                                type: "more",
+                                iconType: "arrow",
+                                linktxt: "index",
+                                link: page.root,
+                            })

@@ -1,0 +1,26 @@
+// ------------------------------
+// page-about
+// ------------------------------
+
+// ---------- content ----------
+.content {
+    padding: 120px 0;
+
+    &__ttl {
+        margin-bottom: 44px;
+    }
+
+    &__head {
+        margin-bottom: 40px;
+    }
+
+    &__slide {
+        margin-bottom: 100px;
+    }
+
+    &__group {
+        & + .content__group {
+            margin-top: 40px;
+        }
+    }
+}
