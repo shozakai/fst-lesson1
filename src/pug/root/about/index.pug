@@ -20,7 +20,17 @@ block content
     section.content
         .l-inner
             h2.content__ttl.c-text--lineOrange 見出しテスト見出しテスト見出しテスト
-            .content__slide
+            #js-slide.content__slide
+                ul.js-slide-top
+                    li.js-slide-top__item: img(src=page.root + "assets/images/about/slide01.jpg")
+                    li.js-slide-top__item: img(src=page.root + "assets/images/about/slide02.jpg")
+                    li.js-slide-top__item: img(src=page.root + "assets/images/about/slide03.jpg")
+                    li.js-slide-top__item: img(src=page.root + "assets/images/about/slide04.jpg")
+                ul.js-slide-thumb
+                    li.js-slide-thumb__item: img(src=page.root + "assets/images/about/slide01.jpg")
+                    li.js-slide-thumb__item: img(src=page.root + "assets/images/about/slide02.jpg")
+                    li.js-slide-thumb__item: img(src=page.root + "assets/images/about/slide03.jpg")
+                    li.js-slide-thumb__item: img(src=page.root + "assets/images/about/slide04.jpg")
             .c-content-box
                 h3.content__head.c-text--lineBlue 見出しテスト見出しテスト見出しテスト
                 .content__group

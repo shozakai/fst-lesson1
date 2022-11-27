@@ -1,0 +1,30 @@
+// ------------------------------
+// slide
+// ------------------------------
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+.js-slide-top {
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 50%;
+
+    &__item {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.js-slide-thumb {
+    display: flex;
+    gap: 0 13px;
+    &__item {
+        width: 24.09%;
+    }
+}
